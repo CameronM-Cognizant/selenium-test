@@ -1,0 +1,63 @@
+package com.demoqa.testcases;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import java.util.logging.Logger;
+
+import com.demoqa.base.Base;
+import com.demoqa.pages.HomePage;
+import com.demoqa.pages.LoginPage;
+
+
+public class Tester {
+	private WebDriver driver;
+	private HomePage homePage;
+	private LoginPage loginPage;
+	static Logger log = Logger.getLogger(Tester.class.getName());
+	
+	@BeforeEach
+	public void initTest() {
+		Base base = new Base();
+		driver = base.getWebDriver();
+	}
+	
+	
+	@Test
+	public void testElementsListCollapsible() {
+		log.info("Starting test: testElementsListCollapsible");
+		log.info("Navigating to Books page");
+		driver.get("https://demoqa.com/books");
+		homePage = new HomePage(driver);
+		log.info("Clicking on 'Elements' button on homepage");
+		homePage.clickElementsButton();
+		Boolean isVisible = homePage.isNavListVisible();
+		assertTrue(isVisible, "Opening elements navbar list");
+		log.info("Completed test: testElementsListCollapsible");
+		log.info("Elements list is visible: " + isVisible);
+	}
+	
+	
+	@Test
+	public void testEmptyUserNameField() {
+		log.info("Starting test: testEmptyUserNameField");
+		log.info("Navigating to Login page");
+		driver.get("https://demoqa.com/login");
+		loginPage = new LoginPage(driver);
+		Boolean isValid = !loginPage.isUserNameValid("");
+		assertTrue(isValid, "Attempting to login without credentials");
+		log.info("Completed test: testEmptyUserNameField");
+		log.info("Login rejects empty UserName: " + isValid);
+	}
+	
+	
+	@AfterEach
+    public void tearDown() {
+        driver.quit();
+        log.info("Shutting down driver\n");
+    }	
+}

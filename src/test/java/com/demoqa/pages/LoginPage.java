@@ -4,14 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-
 import org.testng.annotations.AfterClass;
 
-public class HomePage {
+
+public class LoginPage {
 	WebDriver driver;
 	
-	public HomePage(WebDriver driver) {
+	public LoginPage(WebDriver driver) {
 		this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -64,15 +63,6 @@ public class HomePage {
     }
 	
 	
-	@FindBy(xpath = "//*[@id=\"searchBox-wrapper\"]/div[1]/div")
-    private WebElement bookSearch;
-	
-	public void useBookSearch(String send) {
-		bookSearch.sendKeys(send);
-        bookSearch.submit();
-    }
-	
-	
 	@FindBy(xpath = "//*[@id=\"app\"]/header/a")
     private WebElement imageLink;
 	
@@ -81,61 +71,21 @@ public class HomePage {
     }
 	
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div[2]/div[2]/div/div[2]/span[2]/select")
-    private WebElement rowsDropDown;
-	
-	public void useRowsDropDown(String rows) {
-		rowsDropDown.sendKeys(rows);
-    }
-	
-	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div[2]/div[1]/div[1]/div/div[4]")
-    private WebElement publisherSort;
-	
-	public void sortByPublisher() {
-		publisherSort.click();
-    }
-	
-	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div[2]/div[1]/div[1]/div/div[1]")
-    private WebElement imageSort;
-	
-	public void sortByImage() {
-		imageSort.click();
-    }
-	
-	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div[2]/div[1]/div[1]/div/div[2]")
-    private WebElement titleSort;
-	
-	public void sortByTitle() {
-		titleSort.click();
-    }
-	
-	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div[2]/div[1]/div[1]/div/div[3]")
-    private WebElement authorSort;
-	
-	public void sortByAuthor() {
-		authorSort.click();
-    }
-	
-	
 	@FindBy(xpath = "//*[@id=\"login\"]")
     private WebElement loginButton;
 	
-	public LoginPage clickLoginButton() {
+	public void clickLoginButton() {
 		loginButton.click();
-		LoginPage loginPage = new LoginPage(driver);
-		return loginPage;
     }
 	
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div/div/div[1]/div/div/div[1]/div")
-    private WebElement elementsList;
+	@FindBy(xpath = "//*[@id=\"userName\"]")
+    private WebElement userNameField;
 	
-	public boolean isNavListVisible() {
-		return elementsList.isDisplayed();
+	public boolean isUserNameValid(String name) {
+		userNameField.sendKeys(name);
+		clickLoginButton();
+		return !userNameField.getAttribute("class").contains("is-invalid");
 	}
 	
 	
