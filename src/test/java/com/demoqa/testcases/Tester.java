@@ -1,26 +1,26 @@
 package com.demoqa.testcases;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import java.util.logging.Logger;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import com.demoqa.base.Base;
 import com.demoqa.pages.HomePage;
 import com.demoqa.pages.LoginPage;
 
+import static org.testng.Assert.assertTrue;
 
-public class Tester {
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public class Tester extends Base {
 	private WebDriver driver;
 	private HomePage homePage;
 	private LoginPage loginPage;
-	static Logger log = Logger.getLogger(Tester.class.getName());
+	private static final Logger log = LogManager.getLogger(Tester.class);
 	
-	@BeforeEach
+	@BeforeMethod
 	public void initTest() {
 		Base base = new Base();
 		driver = base.getWebDriver();
@@ -55,7 +55,8 @@ public class Tester {
 	}
 	
 	
-	@AfterEach
+
+	@AfterMethod
     public void tearDown() {
         driver.quit();
         log.info("Shutting down driver\n");

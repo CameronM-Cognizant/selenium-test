@@ -1,5 +1,8 @@
 package com.demoqa.pages;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterMethod;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -87,10 +90,4 @@ public class LoginPage {
 		clickLoginButton();
 		return !userNameField.getAttribute("class").contains("is-invalid");
 	}
-	
-	
-    @AfterClass
-    public void tearDown() {
-        driver.quit();
-    }
 }

@@ -1,5 +1,8 @@
 package com.demoqa.pages;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterMethod;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -137,10 +140,4 @@ public class HomePage {
 	public boolean isNavListVisible() {
 		return elementsList.isDisplayed();
 	}
-	
-	
-    @AfterClass
-    public void tearDown() {
-        driver.quit();
-    }
 }

@@ -1,0 +1,6 @@
+com\demoqa\testcases\Tester.class
+com\demoqa\pages\HomePage.class
+com\demoqa\poc\ProofOfConcept.class
+com\demoqa\pages\LoginPage.class
+com\demoqa\base\Base.class
+com\demoqa\utilities\PropertiesHandler.class
