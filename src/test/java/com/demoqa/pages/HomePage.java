@@ -1,17 +1,11 @@
 package com.demoqa.pages;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterMethod;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
-import org.testng.annotations.AfterClass;
-
-public class HomePage {
+public class HomePage {	
 	WebDriver driver;
 	
 	public HomePage(WebDriver driver) {

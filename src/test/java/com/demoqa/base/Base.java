@@ -11,9 +11,9 @@ import com.demoqa.utilities.PropertiesHandler;
 
 
 public class Base {
+	protected static WebDriver driver;
 	public WebDriver getWebDriver() {
 		PropertiesHandler config = new PropertiesHandler();
-		WebDriver driver;
 		
 		try {
 			switch (config.getProperty("browser")) {

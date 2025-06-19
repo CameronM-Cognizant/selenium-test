@@ -11,3 +11,42 @@
 2025-06-18 13:13:06 [main] INFO  Tester - Login rejects empty UserName: true
 2025-06-18 13:13:08 [main] INFO  Tester - Shutting down driver
 
+2025-06-18 15:31:37 [main] INFO  Tester - Starting test: testElementsListCollapsible
+2025-06-18 15:31:37 [main] INFO  Tester - Navigating to Books page
+2025-06-18 15:31:38 [main] INFO  Tester - Clicking on 'Elements' button on homepage
+2025-06-18 15:31:39 [main] INFO  Tester - Completed test: testElementsListCollapsible
+2025-06-18 15:31:39 [main] INFO  Tester - Elements list is visible: true
+2025-06-18 15:31:41 [main] INFO  Tester - Shutting down driver
+
+2025-06-18 15:31:43 [main] INFO  Tester - Starting test: testEmptyUserNameField
+2025-06-18 15:31:43 [main] INFO  Tester - Navigating to Login page
+2025-06-18 15:31:45 [main] INFO  Tester - Completed test: testEmptyUserNameField
+2025-06-18 15:31:45 [main] INFO  Tester - Login rejects empty UserName: true
+2025-06-18 15:31:47 [main] INFO  Tester - Shutting down driver
+
+2025-06-18 15:39:54 [main] INFO  Tester - Starting test: testElementsListCollapsible
+2025-06-18 15:39:54 [main] INFO  Tester - Navigating to Books page
+2025-06-18 15:39:56 [main] INFO  Tester - Clicking on 'Elements' button on homepage
+2025-06-18 15:39:56 [main] INFO  Tester - Completed test: testElementsListCollapsible
+2025-06-18 15:39:56 [main] INFO  Tester - Elements list is visible: true
+2025-06-18 15:39:58 [main] INFO  Tester - Shutting down driver
+
+2025-06-18 15:40:00 [main] INFO  Tester - Starting test: testEmptyUserNameField
+2025-06-18 15:40:00 [main] INFO  Tester - Navigating to Login page
+2025-06-18 15:40:02 [main] INFO  Tester - Completed test: testEmptyUserNameField
+2025-06-18 15:40:02 [main] INFO  Tester - Login rejects empty UserName: true
+2025-06-18 15:40:04 [main] INFO  Tester - Shutting down driver
+
+2025-06-19 09:25:41 [main] INFO  Tester - Starting test: testElementsListCollapsible
+2025-06-19 09:25:41 [main] INFO  Tester - Navigating to Books page
+2025-06-19 09:25:42 [main] INFO  Tester - Clicking on 'Elements' button on homepage
+2025-06-19 09:25:43 [main] INFO  Tester - Completed test: testElementsListCollapsible
+2025-06-19 09:25:43 [main] INFO  Tester - Elements list is visible: true
+2025-06-19 09:25:44 [main] INFO  Tester - Shutting down driver
+
+2025-06-19 09:25:46 [main] INFO  Tester - Starting test: testEmptyUserNameField
+2025-06-19 09:25:46 [main] INFO  Tester - Navigating to Login page
+2025-06-19 09:25:47 [main] INFO  Tester - Completed test: testEmptyUserNameField
+2025-06-19 09:25:47 [main] INFO  Tester - Login rejects empty UserName: true
+2025-06-19 09:25:49 [main] INFO  Tester - Shutting down driver
+
