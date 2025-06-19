@@ -141,3 +141,16 @@
 2025-06-19 11:50:32 [main] INFO  Tester - Login rejects empty UserName: true
 2025-06-19 11:50:33 [main] INFO  Tester - Shutting down driver
 
+2025-06-19 16:57:23 [main] INFO  Tester - Starting test: testElementsListCollapsible
+2025-06-19 16:57:23 [main] INFO  Tester - Navigating to Books page
+2025-06-19 16:57:24 [main] INFO  Tester - Clicking on 'Elements' button on homepage
+2025-06-19 16:57:24 [main] INFO  Tester - Completed test: testElementsListCollapsible
+2025-06-19 16:57:24 [main] INFO  Tester - Elements list is visible: true
+2025-06-19 16:57:26 [main] INFO  Tester - Shutting down driver
+
+2025-06-19 16:57:28 [main] INFO  Tester - Starting test: testEmptyUserNameField
+2025-06-19 16:57:28 [main] INFO  Tester - Navigating to Login page
+2025-06-19 16:57:29 [main] INFO  Tester - Completed test: testEmptyUserNameField
+2025-06-19 16:57:29 [main] INFO  Tester - Login rejects empty UserName: true
+2025-06-19 16:57:31 [main] INFO  Tester - Shutting down driver
+
