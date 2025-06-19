@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-18T15:39:51 BST" name="Default suite" finished-at="2025-06-18T15:40:04 BST" duration-ms="13444">
+  <suite started-at="2025-06-19T10:32:37 BST" name="Default suite" finished-at="2025-06-19T10:32:48 BST" duration-ms="11228">
     <groups>
     </groups>
-    <test started-at="2025-06-18T15:39:51 BST" name="Default test" finished-at="2025-06-18T15:40:04 BST" duration-ms="13444">
+    <test started-at="2025-06-19T10:32:37 BST" name="Default test" finished-at="2025-06-19T10:32:48 BST" duration-ms="11228">
       <class name="com.demoqa.testcases.Tester">
-        <test-method is-config="true" signature="initTest()[pri:0, instance:com.demoqa.testcases.Tester@7a55af6b]" started-at="2025-06-18T15:39:51 BST" name="initTest" finished-at="2025-06-18T15:39:54 BST" duration-ms="3136" status="PASS">
+        <test-method is-config="true" signature="initTest()[pri:0, instance:com.demoqa.testcases.Tester@7a55af6b]" started-at="2025-06-19T10:32:37 BST" name="initTest" finished-at="2025-06-19T10:32:40 BST" duration-ms="2489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method signature="testElementsListCollapsible()[pri:0, instance:com.demoqa.testcases.Tester@7a55af6b]" started-at="2025-06-18T15:39:54 BST" name="testElementsListCollapsible" finished-at="2025-06-18T15:39:56 BST" duration-ms="1948" status="PASS">
+        <test-method signature="testElementsListCollapsible()[pri:0, instance:com.demoqa.testcases.Tester@7a55af6b]" started-at="2025-06-19T10:32:40 BST" name="testElementsListCollapsible" finished-at="2025-06-19T10:32:42 BST" duration-ms="1941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testElementsListCollapsible -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.testcases.Tester@7a55af6b]" started-at="2025-06-18T15:39:56 BST" name="tearDown" finished-at="2025-06-18T15:39:58 BST" duration-ms="1941" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.testcases.Tester@7a55af6b]" started-at="2025-06-19T10:32:42 BST" name="tearDown" finished-at="2025-06-19T10:32:43 BST" duration-ms="1670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initTest()[pri:0, instance:com.demoqa.testcases.Tester@7a55af6b]" started-at="2025-06-18T15:39:58 BST" name="initTest" finished-at="2025-06-18T15:40:00 BST" duration-ms="2573" status="PASS">
+        <test-method is-config="true" signature="initTest()[pri:0, instance:com.demoqa.testcases.Tester@7a55af6b]" started-at="2025-06-19T10:32:43 BST" name="initTest" finished-at="2025-06-19T10:32:46 BST" duration-ms="2103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method signature="testEmptyUserNameField()[pri:0, instance:com.demoqa.testcases.Tester@7a55af6b]" started-at="2025-06-18T15:40:00 BST" name="testEmptyUserNameField" finished-at="2025-06-18T15:40:02 BST" duration-ms="1709" status="PASS">
+        <test-method signature="testEmptyUserNameField()[pri:0, instance:com.demoqa.testcases.Tester@7a55af6b]" started-at="2025-06-19T10:32:46 BST" name="testEmptyUserNameField" finished-at="2025-06-19T10:32:47 BST" duration-ms="1273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmptyUserNameField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.testcases.Tester@7a55af6b]" started-at="2025-06-18T15:40:02 BST" name="tearDown" finished-at="2025-06-18T15:40:04 BST" duration-ms="1982" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.testcases.Tester@7a55af6b]" started-at="2025-06-19T10:32:47 BST" name="tearDown" finished-at="2025-06-19T10:32:48 BST" duration-ms="1593" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

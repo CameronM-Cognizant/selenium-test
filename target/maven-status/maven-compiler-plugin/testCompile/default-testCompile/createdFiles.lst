@@ -4,4 +4,5 @@ com\demoqa\poc\ProofOfConcept.class
 com\demoqa\pages\LoginPage.class
 com\demoqa\base\Base.class
 com\demoqa\utilities\PropertiesHandler.class
+com\demoqa\utilities\TestUtils.class
 com\demoqa\utilities\TestListener.class
