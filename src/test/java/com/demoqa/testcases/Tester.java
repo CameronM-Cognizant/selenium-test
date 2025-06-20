@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.demoqa.base.Base;
 import com.demoqa.pages.HomePage;
 import com.demoqa.pages.LoginPage;
+import com.demoqa.utilities.DatabaseUtil;
 import com.demoqa.utilities.TestListener;
 
 import static org.testng.Assert.assertTrue;
@@ -57,6 +58,17 @@ public class Tester extends Base {
 		log.info("Login accepts empty UserName: " + isValid);
 	}
 	
+	
+	@Test
+	public void testDBConnection() {
+		log.info("Starting test: testDBConnection");
+		log.info("Connecting to database");
+		DatabaseUtil.connect();
+		Boolean isValid = DatabaseUtil.getFirstBookTitle();
+		assertTrue(isValid, "Attempting to collect first book title from database");
+		log.info("Completed test: testDBConnection");
+		log.info("First book received: " + isValid);
+	}
 	
 
 	@AfterMethod
