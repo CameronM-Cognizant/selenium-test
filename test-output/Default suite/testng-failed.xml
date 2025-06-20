@@ -6,8 +6,9 @@
       <class name="com.demoqa.testcases.Tester">
         <methods>
           <include name="initTest"/>
-          <include name="tearDown"/>
           <include name="testEmptyUserNameField"/>
+          <include name="tearDown"/>
+          <include name="testLoginFromExcel" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- com.demoqa.testcases.Tester -->
     </classes>

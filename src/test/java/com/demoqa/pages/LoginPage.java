@@ -1,17 +1,21 @@
 package com.demoqa.pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
 public class LoginPage {
 	WebDriver driver;
+	Actions action;
 	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
         PageFactory.initElements(driver, this);
+        action = new Actions(driver);
     }
 	
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div/div/div[1]/div/div/div[1]/span")
@@ -74,6 +78,7 @@ public class LoginPage {
     private WebElement loginButton;
 	
 	public void clickLoginButton() {
+		action.moveToElement(loginButton);
 		loginButton.click();
     }
 	
@@ -85,5 +90,33 @@ public class LoginPage {
 		userNameField.sendKeys(name);
 		clickLoginButton();
 		return !userNameField.getAttribute("class").contains("is-invalid");
+	}
+	
+	@FindBy(xpath = "//*[@id=\"password\"]")
+    private WebElement passWordField;
+	
+	public void login(String name, String pass) {		
+		userNameField.sendKeys(name);
+		passWordField.sendKeys(pass);
+		clickLoginButton();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private void adRemoval() {
+		JavascriptExecutor js = null;
+		if (driver instanceof JavascriptExecutor) {
+		    js = (JavascriptExecutor) driver;
+		}
+		js.executeScript("return document.getElementById('RightSide_Advertisement').remove();");
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 }
