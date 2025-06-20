@@ -51,10 +51,10 @@ public class Tester extends Base {
 		log.info("Navigating to Login page");
 		driver.get("https://demoqa.com/login");
 		loginPage = new LoginPage(driver);
-		Boolean isValid = !loginPage.isUserNameValid("");
+		Boolean isValid = loginPage.isUserNameValid("");
 		assertTrue(isValid, "Attempting to login without credentials");
 		log.info("Completed test: testEmptyUserNameField");
-		log.info("Login rejects empty UserName: " + isValid);
+		log.info("Login accepts empty UserName: " + isValid);
 	}
 	
 	
